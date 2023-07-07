@@ -141,10 +141,10 @@ app.post('/register', (req, res) => {
 
     if (err == 0) {
         // Call create_user function and handle the response
-        functions.create_user(email, email, f_name, l_name, ph_no, psw)
+        functions.createUser(email, email, f_name, l_name, ph_no, psw)
             .then((resp) => {
                 console.log(resp);
-                res.status(200).json({ message: 'User created successfully!' });
+                res.redirect('/html/login_page.html');
             })
             .catch((error) => {
                 console.error(error);

@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 
 function openCon() {
-    const dbhost = 'localhost';
+    const dbhost = '127.0.0.1';
     const dbuser = 'admin2';
     const dbpass = 'admin2';
     const db = 'finlearn';
